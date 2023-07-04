@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Movies</title>
+</head>
+<body>
+    <h1>Top Movies</h1>
+    <form action="/top_movies" method="POST">
+        <label for="amount">Amount of movies to display:</label>
+        <input type="number" id="amount" name="amount" required>
+        <label for="min_reviews">Minimum number of reviews:</label>
+        <input type="number" id="min_reviews" name="min_reviews" required>
+        <button type="submit">Get Top Movies</button>
+    </form>
+</body>
+</html>

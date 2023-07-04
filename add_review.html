@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Add Review</title>
+</head>
+<body>
+  <h1>Add Review</h1>
+  <form action="{{ url_for('add_review') }}" method="POST">
+    <label for="name">Your Name:</label>
+    <input type="text" name="name" id="name" required><br><br>
+    <label for="movie_id">Movie ID:</label>
+    <input type="text" name="movie_id" id="movie_id" required><br><br>
+    <label for="review">Review:</label>
+    <textarea name="review" id="review" rows="4" cols="50" required></textarea><br><br>
+    <input type="submit" value="Submit">
+  </form>
+  
+</body>
+</html>

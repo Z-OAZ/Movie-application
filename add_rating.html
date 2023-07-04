@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Rating</title>
+</head>
+<body>
+    <h1>Add Rating</h1>
+    {% if message %}
+    <p>{{ message }}</p>
+    {% endif %}
+    <form action="/add_rating" method="POST">
+        <label for="rating">Rating (0..10):</label>
+        <input type="number" id="rating" name="rating" min="0" max="10" required>
+        <label for="movie_id">Movie ID:</label>
+        <input type="text" id="movie_id" name="movie_id" required>
+        <button type="submit">Add Rating</button>
+    </form>
+</body>
+</html>

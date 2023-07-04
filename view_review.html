@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Reviews</title>
+</head>
+<body>
+  <h1>View Reviews</h1>
+  <form action="{{ url_for('view_review') }}" method="POST">
+    <label for="movie_id">Movie ID:</label>
+    <input type="text" name="movie_id" id="movie_id" required><br><br>
+    <input type="submit" value="View Reviews">
+  </form>
+
+  {% if reviews %}
+    <h2>Reviews:</h2>
+    <ul>
+      {% for review in reviews %}
+        <li>{{ review[0] }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
