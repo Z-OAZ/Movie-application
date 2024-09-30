@@ -1,19 +1,4 @@
 
-#
-# File: objecttier.py
-#
-# Builds Movie-related objects from data retrieved through
-# the data tier.
-#
-# Original author:
-#   Prof. Joe Hummel
-#   U. of Illinois, Chicago
-#   CS 341, Spring 2022
-#   Project #02
-#
-# Name: Zaid Al-Zoubi
-# UIN: 670498910
-# Assignment: Project2 objecttier
 import datatier
 
 
