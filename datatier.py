@@ -1,18 +1,4 @@
-#########################################
-#
-# File: datatier.py
-#
-# Executes SQL queries against the given database.
-#
-# Original author:
-#   Prof. Joe Hummel
-#   U. of Illinois, Chicago
-#   CS 341, Spring 2022
-#   Project 02
-#
-# Name: Zaid Al-Zoubi
-# UIN: 670498910
-# Assignment: Project2 datatier
+
 import sqlite3
 
 
